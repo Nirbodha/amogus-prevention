@@ -17,10 +17,21 @@
     <h2>What do the objects coming off of the bookshelf remind you of?</h2>
     <img src="https://cmcdistribution.com.vn/en/wp-content/uploads/2021/03/Minecraft-but-SUS-Bookshelf.jpg"></img>
     <br>
-    <button id='no'>Severely deformed books</button>
-    <button id='yes'>IMPOSTERS</button>
+    <button onclick='good()' id='delete'>Severely deformed books</button>
+    <button onclick='amogusDetect()'>IMPOSTERS</button>
+    <audio id='nikhil' src="bigmacwhopper.mp3" hidden='true' loop/>
+    <div id='stuff'></div>
     <script>
-
+      function amogusDetect() {
+        document.getElementById('stuff').InnerHTML = '<h1>asdfadfadfad gae</h1>';
+        alert('You are a coward and a scoundrel.');
+        document.getElementById('nikhil').play();
+        document.getElementById('delete').remove();
+      }
+      function good() {
+        document.getElementById('stuff').InnerHTML = '<h1>You are not suffering Amogus!</h1>';
+        alert('Excellent! You do not suffer from Amogus!');
+      }
     </script>
   </body>
 </html>
